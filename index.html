@@ -147,7 +147,8 @@ section.stage {
 .journey p { font-size: 1rem; color: var(--muted); }
 .journey li.next .when { color: var(--accent); }
 .venture-intro { display: grid; grid-template-columns: 1fr 16rem; gap: 1.25rem; align-items: start; }
-.venture-intro p { min-width: 0; }
+.venture-intro .venture-copy { min-width: 0; display: grid; gap: .6rem; }
+.mission { font-family: var(--font-display); font-weight: 700; font-size: 1.2rem; color: var(--signal); }
 .shot { margin: 0; display: grid; gap: .4rem; }
 .shot img { width: 100%; max-width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 6px; display: block; background: var(--accent-soft); }
 .shot figcaption { font-family: var(--font-mono); font-size: .8rem; color: var(--muted); }
@@ -287,7 +288,7 @@ footer a { color: var(--muted); }
       <div class="rail"><div class="label">Who I am</div><h2>About</h2></div>
       <div class="body">
         <p>I started as a mechanical engineer in India, commissioning industrial equipment and then leading quality assurance in manufacturing. That's where I learned to think in systems: understand how it works, find where it breaks, fix it so it stays fixed.</p>
-        <p>In 2019 I moved to Germany, earned two master's degrees in Berlin, and have built my life and work here since. In 2023 I started my own venture, Travel Tribe, and I haven't stopped building since. I stay calm under pressure, I aim high, and I like to let results do the talking.</p>
+        <p>In 2019 I moved to Germany, earned two master's degrees in Berlin, and have built my life and work here since. In 2023 I started my own venture, Travel Tribe, as a social entrepreneur, and I haven't stopped building since. I stay calm under pressure, I aim high, and I like to let results do the talking.</p>
         <p class="values">Ownership<span>·</span>Continuous learning<span>·</span>Meaningful impact</p>
         <div class="ambition">
           <div class="label">Where I'm heading</div>
@@ -311,28 +312,30 @@ footer a { color: var(--muted); }
         <div class="venture-card">
           <div class="venture-head">
             <h3>Travel Tribe</h3>
-            <span class="label">Founder · self-funded · since 2023</span>
+            <span class="label">Founder · self-funded · since March 2023</span>
           </div>
           <div class="venture-intro">
-            <p>I started Travel Tribe to make outdoor adventure in Berlin affordable and social, so nobody has to explore alone. I built it from zero and run it myself alongside my full-time work: the idea, the trips, the pricing, the partners, the marketing and the tech.</p>
+            <div class="venture-copy"><p class="mission">Get outside and find your people.</p><p>I'm an introvert, and I know how hard it is to find good company for adventures. So I started Travel Tribe: small, friendly groups that make outdoor trips from Berlin affordable and social. Many people come alone and leave with friends. I built it from zero and run it myself alongside my full-time work: the idea, the trips, the pricing, the partners, the marketing and the tech.</p></div>
             <figure class="shot"><img src="bastei.jpg" alt="Aditya smiling above the Elbe valley at the Bastei, Saxon Switzerland"><figcaption>Bastei, Saxon Switzerland</figcaption></figure>
           </div>
           <div class="venture-stats">
-            <div><strong>50+</strong><span>events delivered</span></div>
-            <div><strong>600+</strong><span>participants</span></div>
-            <div><strong>4.9/5</strong><span>average rating</span></div>
-            <div><strong>€3.20→€10.10</strong><span>profit per booking</span></div>
+            <div><strong>60+</strong><span>events since 2023</span></div>
+            <div><strong>600+</strong><span>travellers</span></div>
+            <div><strong>25+</strong><span>nationalities</span></div>
+            <div><strong>4.9/5</strong><span>from 175 Meetup reviews</span></div>
           </div>
           <ol class="journey">
-            <li><span class="when">2023</span><div><b>Founded on Meetup</b><p>First hikes and trips, organised through Meetup and learned by doing.</p></div></li>
+            <li><span class="when">2023</span><div><b>Founded on Meetup</b><p>Started in March 2023 as a small Meetup group. People enjoyed the trips and brought friends, so it grew by word of mouth.</p></div></li>
             <li><span class="when">Then</span><div><b>Grew the community</b><p>Expanded across Meetup and social channels to 1,500+ members.</p></div></li>
-            <li><span class="when">Then</span><div><b>Made it a real business</b><p>Reworked pricing and costs, standardised event formats, and lifted margin from 9.8% to 25% at stable volume.</p></div></li>
+            <li><span class="when">Then</span><div><b>Made it a real business</b><p>Reworked pricing and costs and standardised event formats: profit per booking up from €3.20 to €10.10, margin from 9.8% to 25%, at stable volume.</p></div></li>
             <li><span class="when">2026</span><div><b>Launched my own platform</b><p>yourtraveltribe.de: guest booking, PayPal or bank transfer, and an invoice sent automatically with every booking.</p></div></li>
             <li class="next"><span class="when">Next</span><div><b>Open it to other organisers</b><p>Turn my booking platform into a home for other organisers, so more people can run trips like mine.</p></div></li>
           </ol>
+          <div class="sub">What Travel Tribe runs</div>
+          <div class="tags"><span class="tag">Day hikes near Berlin</span><span class="tag">Weekend trips across Germany</span><span class="tag">Multi-day trips in Europe</span><span class="tag">Dinners &amp; game nights</span><span class="tag">Groups of 12–18</span></div>
           <div class="sub">What I own as founder</div>
           <div class="tags"><span class="tag">Strategy</span><span class="tag">Pricing &amp; unit economics</span><span class="tag">Event design</span><span class="tag">Partners</span><span class="tag">Marketing &amp; Instagram</span><span class="tag">Operations</span><span class="tag">Invoicing</span><span class="tag">Platform</span></div>
-          <div><a class="btn" href="https://yourtraveltribe.de" target="_blank" rel="noopener">Visit Travel Tribe ↗</a></div>
+          <div class="cta"><a class="btn" href="https://yourtraveltribe.de" target="_blank" rel="noopener">Visit Travel Tribe ↗</a><a class="btn ghost" href="https://www.instagram.com/traveltribe_berlin/" target="_blank" rel="noopener">Instagram ↗</a></div>
         </div>
       </div>
     </section>
@@ -402,7 +405,7 @@ footer a { color: var(--muted); }
       <div class="rail"><div class="label">Track record</div><h2>Work</h2></div>
       <div class="body">
         <ol class="timeline">
-          <li><span class="when">2023 – today</span><div><h3>Founder · <span class="org">Travel Tribe</span></h3><p>My own outdoor travel venture in Berlin.</p></div></li>
+          <li><span class="when">2023 – today</span><div><h3>Founder · <span class="org">Travel Tribe</span></h3><p>My outdoor community and trip platform in Berlin: 60+ events, travellers from 25+ nationalities.</p></div></li>
           <li><span class="when">2023 – 2026</span><div><h3>Operations Manager · <span class="org">CNC24</span></h3><p>B2B machine-parts marketplace. Joined as a working student, promoted to Operations Manager in 2024.</p></div></li>
           <li><span class="when">2022</span><div><h3>Fleet Operations Associate · <span class="org">Zoomo</span></h3><p>Early hire in Berlin, leading a two-person mechanic team while Zoomo set up B2B e-bike leasing for delivery companies.</p></div></li>
           <li><span class="when">2016 – 2018</span><div><h3>Quality Assurance Manager · <span class="org">Citizen Industries</span></h3><p>Lean manufacturing and ISO 9001 recertification, Gujarat.</p></div></li>
