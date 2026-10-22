@@ -121,6 +121,11 @@ section.stage {
 .sub { font-family: var(--font-display); font-size: 1rem; font-weight: 700; margin-top: .5rem; }
 
 /* About extras */
+.status { display: inline-flex; align-items: center; gap: .5rem; width: fit-content; font-family: var(--font-mono); font-size: .85rem; color: var(--accent); background: var(--accent-soft); padding: .35rem .75rem; border-radius: 999px; text-decoration: none; }
+.status::before { content: ""; width: .5rem; height: .5rem; border-radius: 50%; background: #2f9e6b; }
+.open { background: var(--surface); border: 1px solid var(--rule); border-left: 3px solid #2f9e6b; padding: 1rem 1.2rem; display: grid; gap: .6rem; scroll-margin-top: 4rem; }
+.open .label { color: var(--accent); }
+.open p { font-size: 1rem; color: var(--muted); }
 .values { font-family: var(--font-display); font-weight: 700; font-size: 1rem; color: var(--accent); }
 .values span { color: var(--muted); font-weight: 500; padding-inline: .35rem; }
 .ambition { border-left: 3px solid var(--signal); padding: .2rem 0 .2rem 1rem; display: grid; gap: .3rem; }
@@ -260,6 +265,7 @@ footer a { color: var(--muted); }
 
   <header class="hero" id="top">
     <div class="hero-text">
+      <a class="status" href="#open">Open to new opportunities</a>
       <h1>Aditya Prajapati</h1>
       <div class="roles-line">Operations professional. <em>Engineer by training.</em></div>
       <p class="lede">I make operations run better: clear processes, useful data and practical AI tools that remove busywork. Calm when things get messy, ambitious about what comes next.</p>
@@ -290,6 +296,11 @@ footer a { color: var(--muted); }
       <div class="body">
         <p>I started as a mechanical engineer in India, commissioning industrial equipment and then leading quality assurance in manufacturing. That's where I learned to think in systems: understand how it works, find where it breaks, fix it so it stays fixed.</p>
         <p>In 2019 I moved to Germany, earned two master's degrees in Berlin and built my career here: first in fleet operations at Zoomo, then in operations at CNC24. I became a German citizen in 2026. Outside work I run Travel Tribe, a hiking and travel hobby where I try out ideas on something I fully own. I stay calm under pressure, I aim high, and I like to let results do the talking.</p>
+        <div class="open" id="open">
+          <div class="label">Open to new opportunities</div>
+          <div class="tags"><span class="tag">Operations Manager</span><span class="tag">Business Operations</span><span class="tag">Operational Excellence &amp; Process Improvement</span><span class="tag">Project Management</span><span class="tag">Business Transformation</span><span class="tag">AI-enabled Operations</span></div>
+          <p>Based in Berlin and open to roles across Germany and Europe. German citizen, so no visa needed.</p>
+        </div>
         <p class="values">Ownership<span>·</span>Continuous learning<span>·</span>Meaningful impact</p>
         <div class="ambition">
           <div class="label">Where I'm heading</div>
@@ -426,7 +437,7 @@ footer a { color: var(--muted); }
     <section class="stage" id="contact">
       <div class="rail"><div class="label">Get in touch</div><h2>Contact</h2></div>
       <div class="body">
-        <p>Want to talk about operations, process improvement or AI-assisted work? I'm always happy to meet people working on interesting things.</p>
+        <p>Hiring for an operations, process improvement or project role? I'm open to new opportunities and happy to talk. The quickest way to reach me is by email or LinkedIn.</p>
         <div class="contact-line">
           <a class="email" id="email" href="mailto:aditprajapati@gmail.com">aditprajapati@gmail.com</a>
           <button class="btn" id="copy-email" type="button">Copy email</button>
